@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "mypy-plugin-sample"
+version = "0.1.0"
+description = ""
+authors = ["denzow <denzow@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+mypy = "^1.13.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.mypy]
+python_version = "3.12"
+plugins = "sample_plugin.py"
